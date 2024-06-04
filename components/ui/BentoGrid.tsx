@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
+import { GlobeDemo } from "./GridGlobe";
 
 export const BentoGrid = ({
   className,
@@ -56,7 +57,7 @@ export const BentoGridItem = ({
       }}
     >
       
-      <div className={`${id===6} && ' flex justify-center h-full'`}>
+      <div className={`${id===6} && ' flex flex-col justify-center h-full'`}>
         <div className=" w-full h-full absolute">
           {img && (
             <img
@@ -85,10 +86,23 @@ export const BentoGridItem = ({
             {description}
           </div>
         </div>
-        <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 text-white">
+        <div className={cn( titleClassName, `${id===1 && ' relative bottom-[4rem] left-[3rem] mt-[16rem] mr-[8rem] '}`,`${id===2 && ' relative bottom-[8rem] left-[2rem]'}`,`${id===3 && 'relative bottom-[4rem] left-7'}`,'font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 text-white')}>
           {title}
         </div>
-      </div>
+
+      {id===2 && <GlobeDemo/>}
+      {id===3 && (
+        <div className=" flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+          <div className=" flex flex-col gap-3">
+            {['React.js','Next.js','TypeScript'].map((item)=>(
+              <div key={item} className=" py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center text-white bg-[#10132E]">
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
     </div>
   );
 };
