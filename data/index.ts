@@ -200,7 +200,7 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      link:"https://github.com/alazaradane",
+      link:"https://github.com/selamabay",
       img: "/git.svg",
     },
     {
