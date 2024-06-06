@@ -26,7 +26,7 @@ const Hero = () => {
             words='Transforming Concepts into Seamless User Experiences'/>
           
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-blue-100'>
-            Hi, I'm {name}, a React Developer based in Ethiopia.
+            Hi, I&apos;m {name}, a React Developer based in Ethiopia.
           </p>
 
           <a href="#about">
