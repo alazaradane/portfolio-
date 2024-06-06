@@ -73,35 +73,35 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      title: "Modern Blogify",
+      des: "Sleek and intuitive web application that simplifies the process of creating and managing your own blog. With Blogify",
+      img: "/blog.jpeg",
+      iconLists: ["/re.svg", "/tail.svg", "/mysql.svg","/node.png", "/exp.png"],
+      link: "https://github.com/alazaradane/blogify.git",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
+      title: "E-learning",
       des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      img: "/learn.png",
+      iconLists: ["/vue.png", "/tail.svg", "/node.png", "/mon.png", "/c.svg"],
+      link: "https://github.com/Amsalegebrehana/ESSTI.git",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      title: "Smart Brain",
+      des: "Effortlessly detect and recognize faces in any image you upload, using advanced AI technology for quick and accurate results.",
+      img: "/sbrain.png",
+      iconLists: ["/re.svg", "/tail.svg", "/node.png","/exp.png", "/post.png"],
+      link: "https://github.com/alazaradane/Smart_Brain.git",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      title: "Techopia Book Store",
+      des: "Browse books from a vast collection, enjoy personalized recommendations, and explore literary treasures...",
+      img: "/book.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/node.png", "/mysql.svg"],
+      link: "https://github.com/alazaradane/DLM.git",
     },
   ];
   
@@ -109,8 +109,8 @@ export const navItems = [
     {
       quote:
         "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+      name: "Ahmed Mohammedseid",
+      title: "Director of ZAHA Solution",
     },
     {
       quote:
