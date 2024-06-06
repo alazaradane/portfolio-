@@ -1,3 +1,6 @@
+
+export const name = "Selam"
+
 export const navItems = [ 
     {name:"Home", link:"/"},
     { name: "About", link: "#about" },
@@ -108,34 +111,26 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+        "Collaborating with Selam was an absolute pleasure. Selam professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Selam's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Selam is the ideal partner.",
       name: "Ahmed Mohammedseid",
-      title: "Director of ZAHA Solution",
+      title: "Director of ZAHA",
+      img: "/ahmed.jpg",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Working with Selam was an outstanding experience. Selam expertise, responsiveness, and commitment to excellence shone through every stage of our project. Selam's passion for development and attention to detail made a significant impact. For anyone looking to enhance their digital presence and achieve remarkable results, Selam is the perfect collaborator.",
+      name: "Nebyu Daniel",
+      title: "CEO of FNA Solution",
+      img: "/nebyu.jpeg",
     },
     {
       quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
+        "Working with Selam was fantastic. Selam professionalism, reliability, and passion for development truly elevated our project. Highly recommend Selam for anyone looking to enhance their website and brand.",
+      name: "Fetih Girma",
+      title: "Lead Director at DanEnergy",
+      img: "/fetih.jpeg",
     },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
-    {
-      quote:
-        "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-      name: "Michael Johnson",
-      title: "Director of AlphaStream Technologies",
-    },
+   
   ];
   
   export const companies = [
@@ -174,22 +169,22 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Backend Engineer Intern",
+      desc: "Assisted in the development of a web-based platform using MERN Stack.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Web App Dev - Techopia",
+      desc: "Designed and developed Web app for both local & international clients using latest technologies.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
       title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      desc: "Led the dev of a web app for a client, from initial concept to deployment.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
@@ -205,14 +200,17 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
+      link:"https://github.com/alazaradane",
       img: "/git.svg",
     },
     {
       id: 2,
       img: "/twit.svg",
+      link:"https://twitter.com/alazaradane369"
     },
     {
       id: 3,
       img: "/link.svg",
+      link:"https://www.linkedin.com/in/alazar-adane-827049219/"
     },
   ];

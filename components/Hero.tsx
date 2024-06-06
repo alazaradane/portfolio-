@@ -3,6 +3,7 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
+import { name } from '@/data'
 
 const Hero = () => {
   return (
@@ -25,7 +26,7 @@ const Hero = () => {
             words='Transforming Concepts into Seamless User Experiences'/>
           
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-blue-100'>
-            Hi, I'm Alazar, a React Developer based in Ethiopia.
+            Hi, I'm {name}, a React Developer based in Ethiopia.
           </p>
 
           <a href="#about">

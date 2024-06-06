@@ -1,7 +1,7 @@
 import React from 'react'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
-import { socialMedia } from '@/data'
+import { name, socialMedia } from '@/data'
 
 const Footer = () => {
   return (
@@ -20,11 +20,11 @@ const Footer = () => {
             </a>
         </div>
         <div className=' flex mt-10 md:flex-row flex-col justify-between items-center'>
-            <p className=' md:text-base text-sm md:font-normal font-light'>Copyright &copy; 2024 Alazar</p>
+            <p className=' md:text-base text-sm md:font-normal font-light text-white'>Copyright &copy; 2024 {name}</p>
             <div className=' max-md:mt-3 flex items-center md:gap-3 gap-6'>
                 {socialMedia.map((profile)=>(
                     <div key={profile.id} className=' w-10 h-10 cursor-pointer flex items-center justify-center backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
-                        <img src={profile.img} alt={profile.img} width={20} height={20} />
+                        <a href={profile.link}><img src={profile.img} alt={profile.img} width={20} height={20} /></a>
                     </div>
                 ))}
             </div>

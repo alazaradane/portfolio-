@@ -14,7 +14,7 @@ const Approch = ()=> {
         <Card 
             title="Planning and Strategy" 
             icon={<AceternityIcon order="Phase 1" />}
-            description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+            description="I'll collaborate to map out your website's goals, target audience, and key functionalities. I'll discuss things like site structure, navigation, and content requirements."
             >
           <CanvasRevealEffect
             animationSpeed={5.1}
