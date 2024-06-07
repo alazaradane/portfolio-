@@ -2,7 +2,7 @@ import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa6'
-import Image from 'next/image'
+
 
 
 const RecentProjects = () => {
@@ -19,9 +19,9 @@ const RecentProjects = () => {
                     <PinContainer title={link} href={link}>
                         <div className=' relative flex items-center justify-center sm:w-[400px] w-[80vw] sm:h-[40vh] h-[30vh] overflow-hidden lg:h-[50vh]'>
                             <div className=' relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
-                                <Image src='/bg.png' alt='bg-img'/>
+                                <img src='/bg.png' alt='bg-img'/>
                             </div>
-                            <Image src={img} alt={title} className={` ${id===1 && ' w-[30rem] h-[25rem] px-[0.25rem] pt-[2rem] top-0.5 -translate-y-2 translate-x-2  rotate-3 rounded-md'},${id===2 && ' translate-y-4 rotate-3'},${id===3 && ' rotate-3'} ,${id===4 && ' w-[30rem] px-[0.25rem] pt-[0.5rem] top-0.5 -translate-y-3 translate-x-4  rotate-6 rounded-md'} ,z-10 absolute bottom-0`} />
+                            <img src={img} alt={title} className={` ${id===1 && ' w-[30rem] h-[25rem] px-[0.25rem] pt-[2rem] top-0.5 -translate-y-2 translate-x-2  rotate-3 rounded-md'},${id===2 && ' translate-y-4 rotate-3'},${id===3 && ' rotate-3'} ,${id===4 && ' w-[30rem] px-[0.25rem] pt-[0.5rem] top-0.5 -translate-y-3 translate-x-4  rotate-6 rounded-md'} ,z-10 absolute bottom-0`} />
                         </div>
                         <h1 className=' font-bold lg:text-2xl md:text-xl text-base line-clamp-1 my-[1rem] text-white'>{title}</h1>
                         <p className=' lg:text-xl lg:font-normal font-light  text-sm line-cramp-2'>{des}</p>
@@ -30,7 +30,7 @@ const RecentProjects = () => {
                                 {iconLists.map((icon,index)=>(
                                     <div key={icon} className={`flex items-center justify-center border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 h-8 w-8 gap-1 `}
                                          style={ { transform: `translateX(-${5*index*2}px)`}}>
-                                        <Image src={icon} alt={icon} className='p-2'/>
+                                        <img src={icon} alt={icon} className='p-2'/>
                                     </div>
                                 ))}
                             </div>

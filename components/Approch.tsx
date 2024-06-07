@@ -40,7 +40,7 @@ const Approch = ()=> {
           
         </Card>
         <Card 
-            title="Development and Launch" 
+            title="Deployment and Launch" 
             icon={<AceternityIcon order="Phase 3"/>}
             description={`This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up.`}
             >
