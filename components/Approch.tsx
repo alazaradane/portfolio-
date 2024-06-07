@@ -7,7 +7,7 @@ import { CanvasRevealEffect } from "@/components/ui/CanvaRevealEffect";
 const Approch = ()=> {
   return (
     <section className=" w-full py-20 px-10">
-        <h1 className=" heading">
+        <h1 className=" heading text-white">
             My <span className=" text-purple"> Approach</span>
         </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">

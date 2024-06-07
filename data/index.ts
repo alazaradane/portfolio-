@@ -80,7 +80,7 @@ export const navItems = [
       des: "Sleek and intuitive web application that simplifies the process of creating and managing your own blog. With Blogify",
       img: "/blog.jpeg",
       iconLists: ["/re.svg", "/tail.svg", "/mysql.svg","/node.png", "/exp.png"],
-      link: "https://github.com/alazaradane/blogify.git",
+      link: "https://github.com/selamabay/blogify.git",
     },
     {
       id: 2,
@@ -96,7 +96,7 @@ export const navItems = [
       des: "Effortlessly detect and recognize faces in any image you upload, using advanced AI technology for quick and accurate results.",
       img: "/sbrain.png",
       iconLists: ["/re.svg", "/tail.svg", "/node.png","/exp.png", "/post.png"],
-      link: "https://github.com/alazaradane/Smart_Brain.git",
+      link: "https://github.com/selamabay/Smart_Brain.git",
     },
     {
       id: 4,
@@ -104,7 +104,7 @@ export const navItems = [
       des: "Browse books from a vast collection, enjoy personalized recommendations, and explore literary treasures...",
       img: "/book.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/node.png", "/mysql.svg"],
-      link: "https://github.com/alazaradane/DLM.git",
+      link: "https://github.com/selamabay/DLM.git",
     },
   ];
   
