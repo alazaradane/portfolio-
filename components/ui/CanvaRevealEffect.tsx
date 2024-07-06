@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { cn } from "@/utils/cn";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";

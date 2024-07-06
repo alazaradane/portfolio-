@@ -1,5 +1,5 @@
 
-export const name = "Selam"
+export const name = "Alazar"
 
 export const navItems = [ 
     {name:"Home", link:"/"},
@@ -200,7 +200,7 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      link:"https://github.com/selamabay",
+      link:"https://github.com/alazaradane",
       img: "/git.svg",
     },
     {
