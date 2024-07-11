@@ -1,17 +1,12 @@
 "use client"
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
+import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
 import { name } from '@/data'
-import dynamic from 'next/dynamic'
 
-const TextGenerateEffect = dynamic(() =>
-  import('../components/ui/TextGenerateEffect').then(mod => mod.TextGenerateEffect), 
-  { ssr: false }
-);
-
-const Hero: React.FC = () => {
+const Hero = () => {
   return (
     <div className='pb-20 pt-30'>
       <div>

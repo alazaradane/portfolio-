@@ -11,8 +11,10 @@ export const TextGenerateEffect = ({
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
+
   useEffect(() => {
+    console.log('Starting animation'); // Debugging log
     animate(
       "span",
       {
@@ -22,7 +24,11 @@ export const TextGenerateEffect = ({
         duration: 2,
         delay: stagger(0.2),
       }
-    );
+    ).then(() => {
+      console.log('Animation complete'); // Debugging log
+    }).catch((error) => {
+      console.error('Animation error', error); // Error handling
+    });
   }, [animate]);
 
   const renderWords = () => {
@@ -33,6 +39,7 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               className={`${idx > 3 ? 'text-purple': 'dark:text-white text-black '} opacity-0`}
+              style={{ display: 'inline-block' }} // Ensure span is displayed inline-block for animation
             >
               {word}{" "}
             </motion.span>
