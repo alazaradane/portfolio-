@@ -1,7 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
-import { cn } from "@/utils/cn";
+import { cn } from "../../utils/cn";
 
 export const TextGenerateEffect = ({
   words,
@@ -11,10 +12,9 @@ export const TextGenerateEffect = ({
   className?: string;
 }) => {
   const [scope, animate] = useAnimate();
-  const wordsArray = words.split(" ");
-
+  let wordsArray = words.split(" ");
   useEffect(() => {
-    console.log('Starting animation'); // Debugging log
+    console.log(wordsArray);
     animate(
       "span",
       {
@@ -24,12 +24,8 @@ export const TextGenerateEffect = ({
         duration: 2,
         delay: stagger(0.2),
       }
-    ).then(() => {
-      console.log('Animation complete'); // Debugging log
-    }).catch((error) => {
-      console.error('Animation error', error); // Error handling
-    });
-  }, [animate]);
+    );
+  }, [scope.current]);
 
   const renderWords = () => {
     return (
@@ -38,8 +34,9 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${idx > 3 ? 'text-purple': 'dark:text-white text-black '} opacity-0`}
-              style={{ display: 'inline-block' }} // Ensure span is displayed inline-block for animation
+              // change here if idx is greater than 3, change the text color to #CBACF9
+              className={` ${idx > 3 ? "text-purple" : "dark:text-white text-black"
+                } opacity-0`}
             >
               {word}{" "}
             </motion.span>
@@ -51,8 +48,10 @@ export const TextGenerateEffect = ({
 
   return (
     <div className={cn("font-bold", className)}>
+      {/* mt-4 to my-4 */}
       <div className="my-4">
-        <div className=" dark:text-white text-black  leading-snug tracking-wide">
+        {/* remove  text-2xl from the original */}
+        <div className=" dark:text-white text-black leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>
